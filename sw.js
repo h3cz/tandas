@@ -1,6 +1,4 @@
-// TODO: Generate and place /icon-192.png and /icon-512.png in /public before PWA install prompt works.
-
-const CACHE_NAME = "tandas-v1";
+const CACHE_NAME = "tandas-v2";
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -42,7 +40,7 @@ self.addEventListener("fetch", (event) => {
         // Offline fallback: serve cached navigation page
         if (request.mode === "navigate") {
           return caches.match(request).then(
-            (cached) => cached || caches.match("/")
+            (cached) => cached || caches.match(self.registration.scope)
           );
         }
         return caches.match(request);
