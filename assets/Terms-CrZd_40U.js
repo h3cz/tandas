@@ -1,0 +1,1 @@
+import{j as o}from"./vendor-query-c047i3QP.js";import{L as t,t as r}from"./LegalPage-Bjk0t3K_.js";import"./vendor-react-DZUTtw5U.js";import"./index-DmhGcQ_X.js";import"./vendor-radix-rOwwJcA4.js";import"./vendor-supabase-BrZYiBY-.js";import"./separator-B5Uta6XB.js";import"./mail-DcJpD4wy.js";const f=()=>o.jsx(t,{doc:r});export{f as default};
